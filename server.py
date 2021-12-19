@@ -4,6 +4,9 @@ import csv
 app = Flask(__name__)
 print(__name__)
 
+if __name__ == "__main__":
+    app.run()
+
 @app.route("/")
 def my_home1():
     return render_template("index.html")
